@@ -46,7 +46,7 @@ const Breadcrumb = ({ homeElement, listClasses, activeClasses, capitalizeLinks, 
       </Tooltip>
       <Breadcrumbs aria-label='breadcrumb' className={container}> 
         <Typography>
-          <Link underline='hover' className='text-blue-300'>
+          <Link underline='hover' className='text-blue-600'>
           {homeElement}
           </Link>
         </Typography>

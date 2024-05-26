@@ -21,7 +21,7 @@ export default function RootLayout({
       <Breadcrumb
           homeElement={'Home'}
           activeClasses='text-red-500'
-          container='flex py-5 bg-gradient-to-r from-purple-600 to-blue-600' 
+          container='flex py-5 bg-gradient-to-r from-amber-200 to-green-500' 
           listClasses='hover:underline font-bold text-green-500'
           capitalizeLinks
         />
