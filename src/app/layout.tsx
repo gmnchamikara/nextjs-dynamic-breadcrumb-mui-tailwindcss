@@ -17,7 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <Breadcrumb
+      <body className={inter.className}>        
+      <Breadcrumb
           homeElement={'Home'}
           separator={<span> | </span>}
           activeClasses='text-violet-600'
@@ -25,7 +26,8 @@ export default function RootLayout({
           listClasses='hover:underline font-bold'
           capitalizeLinks
         />
-      <body className={inter.className}>{children}</body>
+        {children}
+        </body>
     </html>
   );
 }

@@ -50,22 +50,11 @@ const Breadcrumb = ({ homeElement, listClasses, activeClasses, capitalizeLinks }
           let href = `/${pathNames.slice(0, index + 1).join('/')}`
           let itemClasses = paths === href ? `${listClasses} ${activeClasses}` : listClasses
           let itemLink = capitalizeLinks ? link[0].toUpperCase() + link.slice(1) : link
-
-          // Determine if the link should be disabled
-
-          const isDisabled = itemLink === 'En' || itemLink === 'Dashboards'
-          
           return (
             <Typography color='text.primary' key={index}>
-              {isDisabled ? (
-                <span className='font-bold' style={{ cursor: 'context-menu', color: 'grey' }}>
-                  {itemLink}
-                </span>
-              ) : (
                 <Link underline='hover' href={href} className={itemClasses}>
                   {itemLink}
                 </Link>
-              )}
             </Typography>
           )
         })}
