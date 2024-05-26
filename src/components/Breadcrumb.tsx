@@ -35,7 +35,7 @@ const Breadcrumb = ({ homeElement, listClasses, activeClasses, capitalizeLinks, 
 
   return (
     <>
-      <Tooltip
+    <Tooltip
         title={'Navigator'}
         onOpen={() => setTooltipOpen(true)}
         onClose={() => setTooltipOpen(false)}
@@ -46,7 +46,7 @@ const Breadcrumb = ({ homeElement, listClasses, activeClasses, capitalizeLinks, 
       </Tooltip>
       <Breadcrumbs aria-label='breadcrumb' className={container}> 
         <Typography>
-          <Link underline='hover' className='text-blue-600'>
+          <Link underline='hover' className='text-slate-900 font-bold'>
           {homeElement}
           </Link>
         </Typography>

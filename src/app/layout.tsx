@@ -17,12 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>        
+      <body className={`${inter.className}`}>        
       <Breadcrumb
           homeElement={'Home'}
-          activeClasses='text-red-500'
+          activeClasses='text-stone-900'
           container='flex py-5 bg-gradient-to-r from-amber-200 to-green-500' 
-          listClasses='hover:underline font-bold text-green-500'
+          listClasses='hover:underline font-bold text-stone-500'
           capitalizeLinks
         />
         {children}
