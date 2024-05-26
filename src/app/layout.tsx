@@ -20,10 +20,9 @@ export default function RootLayout({
       <body className={inter.className}>        
       <Breadcrumb
           homeElement={'Home'}
-          separator={<span> | </span>}
-          activeClasses='text-violet-600'
-          containerClasses='flex py-5 bg-gradient-to-r from-purple-600 to-blue-600' 
-          listClasses='hover:underline font-bold'
+          activeClasses='text-red-500'
+          container='flex py-5 bg-gradient-to-r from-purple-600 to-blue-600' 
+          listClasses='hover:underline font-bold text-green-500'
           capitalizeLinks
         />
         {children}
